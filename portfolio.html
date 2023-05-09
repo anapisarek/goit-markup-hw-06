@@ -1,257 +1,279 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio - Portfolio</title>
 
   <!-- Modern normalize -->
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+  integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="css/main.min.css">
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="wrapper">
 
   <!-- ========== HEADER ========== -->
-      
-    <header class="header">
-      <div class="container header__container">
-        <a class="logo" href="#"><span class="logo__span">Web</span>Studio</a>
-        
+
+      <header class="header-container">
+        <div class="container nav-container">
+          <a class="logo-placeholder style-link" href="#"><span class="logo-span">Web</span>Studio</a>
+
   <!-- Menu -->
-        
-        <nav class="nav">
-          <ul class="nav__links">
-            <li><a class="nav__link style-link" href="index.html">Agencja</a></li>
-            <li><a class="nav__link style-link nav__link--current" href="#">Portfolio</a></li>
-            <li><a class="nav__link style-link" href="#">Kontakt</a></li>
-          </ul>
-          <ul class="nav__contacts">
-            <li>
-              <a class="nav__contact-link style-link" href="mailto:info@devstudio.com">
-                <svg class="nav__contact-icon" width="16" height="16">
-                  <use href="images/icons.svg#icon-envelope"></use>
-                </svg>info@devstudio.com</a>
-              </li>
-              <li>
-                <a class="nav__contact-link style-link" href="tel:+48111111111">
-                  <svg class="nav__contact-icon" width="10" height="16">
-                    <use href="images/icons.svg#icon-smartphone"></use>
-                  </svg>+48 111 111 111</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-        
+
+          <nav class="navigation">
+            <ul class="nav-links">
+              <li><a class="nav-link style-link" href="index.html">Agencja</a></li>
+              <li><a class="nav-link style-link curr-link" href="#">Portfolio</a></li>
+              <li><a class="nav-link style-link" href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+
+  <!-- Contact details -->
+
+          <a class="info-link mail-link style-link" href="mailto:info@devstudio.com">
+            <svg class="icon-nav" width="16" height="19">
+              <use href="images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a>
+          <a class="info-link tel-link style-link" href="tel:+48111111111">
+            <svg class="icon-nav" width="16" height="19">
+              <use href="images/icons.svg#icon-smartphone"></use>
+            </svg>+48 111 111 111</a>
+        </div>
+      </header>
+
   <!-- ========== MAIN ========== -->
 
-        <main class="section">
-          <div class="container">
-            
-  <!-- Section for button to filter portfolio --> 
-            
-            <section class="portfolio-filter">
-              <ul class="portfolio-filter__buttons-list">
-                <li><button class="portfolio-filter__button" type="button">Wszystkie</button></li>
-                <li><button class="portfolio-filter__button" type="button">Strony</button></li>
-                <li><button class="portfolio-filter__button" type="button">Aplikacje</button></li>
-                <li><button class="portfolio-filter__button" type="button">Dizajn</button></li>
-                <li><button class="portfolio-filter__button" type="button">Marketing</button></li>
-              </ul>
-            </section>
-      
+      <main class="section">
+        <div class="container">
+          
+  <!-- Section for button to filter portfolio -->
+
+          <section class="filtr-portfolio">
+            <ul class="portfolio-buttons">
+              <li><button class="filter-btn" type="button">Wszystkie</button></li>
+              <li><button class="filter-btn" type="button">Strony</button></li>
+              <li><button class="filter-btn" type="button">Aplikacje</button></li>
+              <li><button class="filter-btn" type="button">Dizajn</button></li>
+              <li><button class="filter-btn" type="button">Marketing</button></li>
+            </ul>
+          </section>
+
   <!-- Portfolio section, images with descriptions -->
-      
-            <section class="portfolio">
-              <ul class="portfolio__items-list">
-                <li tabindex="0" class="portfolio__item">
-                  <div class="portfolio__img-box">
-                    <img src="images/portfolio/portfolio-01.jpg" alt="Picture of website with some people" width="370" height="294" />
-                    <div class="portfolio__img-overlay">
-                      <p class="portfolio__asd">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                      </div>
-                      <div class="portfolio__text-box">
-                        <h3 class="portfolio__title">Technocrack</h3>
-                        <p class="portfolio__description">Strona internetowa</p>
-                      </div>
-                    </li>
-                    <li tabindex="0" class="portfolio__item">
-                      <div class="portfolio__img-box">
-                        <img src="images/portfolio/portfolio-02.jpg" alt="Picture of website with some people" width="370" height="294" />
-                        <div class="portfolio__img-overlay">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                      </div>
-                      <div class="portfolio__text-box">
-                        <h3 class="portfolio__title">Grafika New Orlean vs Golden Star</h3>
-                        <p class="portfolio__description">Dizajn</p>
-                      </div>
-                    </li>
-                    <li tabindex="0" class="portfolio__item">
-                      <div class="portfolio__img-box">
-                        <img src="images/portfolio/portfolio-03.jpg" alt="Picture of website with some people" width="370" height="294" />
-                        <div class="portfolio__img-overlay">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                      </div>
-                      <div class="portfolio__text-box">
-                        <h3 class="portfolio__title">Grafika New Orlean vs Golden Star</h3>
-                        <p class="portfolio__description">Aplikacja</p>
-                      </div>
-                    </li>
-                    <li tabindex="0" class="portfolio__item">
-                      <div class="portfolio__img-box">
-                        <img src="images/portfolio/portfolio-04.jpg" alt="Picture of website with some people" width="370" height="294" />
-                        <div class="portfolio__img-overlay">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                      </div>
-                      <div class="portfolio__text-box">
-                        <h3 class="portfolio__title">Projekt Prime</h3>
-                        <p class="portfolio__description">Marketing</p>
-                      </div>
-                    </li>
-                    <li tabindex="0" class="portfolio__item">
-                      <div class="portfolio__img-box">
-                        <img src="images/portfolio/portfolio-05.jpg" alt="Picture of website with some people" width="370" height="294" />
-                        <div class="portfolio__img-overlay">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                      </div>
-                      <div class="portfolio__text-box">
-                        <h3 class="portfolio__title">Projekt Boxes</h3>
-                        <p class="portfolio__description">Aplikacja</p>
-                      </div>
-                    </li>
-                    <li tabindex="0" class="portfolio__item">
-                      <div class="portfolio__img-box">
-                        <img src="images/portfolio/portfolio-06.jpg" alt="Picture of website with some people" width="370" height="294" />
-                        <div class="portfolio__img-overlay">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                      </div>
-                      <div class="portfolio__text-box">
-                        <h3 class="portfolio__title">Inspiration has no Borders</h3>
-                        <p class="portfolio__description">Strona internetowa</p>
-                      </div>
-                    </li>
-                    <li tabindex="0" class="portfolio__item">
-                      <div class="portfolio__img-box">
-                        <img src="images/portfolio/portfolio-07.jpg" alt="Picture of website with some people" width="370" height="294" />
-                        <div class="portfolio__img-overlay">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                      </div>
-                      <div class="portfolio__text-box">
-                        <h3 class="portfolio__title">Magazyn Limited Edition</h3>
-                        <p class="portfolio__description">Dizajn</p>
-                      </div>
-                    </li>
-                    <li tabindex="0" class="portfolio__item">
-                      <div class="portfolio__img-box">
-                        <img src="images/portfolio/portfolio-08.jpg" alt="Picture of website with some people" width="370" height="294" />
-                        <div class="portfolio__img-overlay">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                      </div>
-                      <div class="portfolio__text-box">
-                        <h3 class="portfolio__title">Projekt LAB</h3>
-                        <p class="portfolio__description">Marketing</p>
-                      </div>
-                    </li>
-                    <li tabindex="0" class="portfolio__item">
-                      <div class="portfolio__img-box">
-                        <img src="images/portfolio/portfolio-09.jpg" alt="Picture of website with some people" width="370" height="294" />
-                        <div class="portfolio__img-overlay">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                      </div>
-                      <div class="portfolio__text-box">
-                        <h3 class="portfolio__title">Growing Business</h3>
-                        <p class="portfolio__description">Aplikacja</p>
-                      </div>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-            </main>
-      
-<!-- ========== FOOTER ========== -->
-      
-            <footer class="footer">
-              <div class="container footer-container">
-                <div class="footer-contacts">
-                  <a class="logo logo-footer" href="#"><span class="logo__span">Web</span>Studio</a>
-                  <address class="footer-contacts__adress-area">
-                    <ul class="footer-contacts__adress-list">
-                      <li>
-                        <a
-                          class="footer-contacts__adress-link style-link"
-                          href="https://goo.gl/maps/Lxoy2PiTruj3LMqQA"
-                          target="_blank"
-                          rel="noopener nofollow noreferrer"
-                        >
-                          m. Warszawa, Aleje Jerozolimskie 21
-                        </a>
-                      </li>
-                      <li><a class="footer-contacts__link style-link" href="mailto:info@example.com">info@example.com</a></li>
-                      <li><a class="footer-contacts__link style-link" href="tel:+48111111111">+48 111 111 111</a></li>
-                    </ul>
-                  </address>
+
+          <section class="portfolio">
+            <ul class="portfolio-list">
+              <li class="portfolio-item">
+                <div class="portfolio-box">
+                  <img src="images/portfolio/portfolio-01.jpg" alt="Picture of website with some people" width="370" height="294" />
+                  <div class="portfolio-overlay">
+                    <p>Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na niezabezpieczone
+                      serwery konkurencji</p>
+                  </div>
                 </div>
-                <div class="footer-socials">
-                  <h3 class="footer-h3">dołącz do nas</h3>
-                  <ul class="footer-socials__list">
-                    <li class="footer-socials__icon-placeholder">
-                      <svg class="icon" width="20" height="20">
-                        <use href="images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </li>
-                    <li class="footer-socials__icon-placeholder">
-                      <svg class="icon" width="20" height="20">
-                        <use href="images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </li>
-                    <li class="footer-socials__icon-placeholder">
-                      <svg class="icon" width="20" height="20">
-                        <use href="images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </li>
-                    <li class="footer-socials__icon-placeholder">
-                      <svg class="icon" width="20" height="20">
-                        <use href="images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </li>
-                  </ul>
+                <div class="portfolio-text-container">
+                  <h3 class="portfolio-title">Technocrack</h3>
+                  <p class="portfolio-description">Strona internetowa</p>
                 </div>
-                <div class="footer-newsletter">
-                  <h3 class="footer-h3">zapisz się do newslettera</h3>
-                  <form class="footer-form">
-                    <input class="footer-form__newsletter-input" type="email" name="newsletter-input-footer" placeholder="E-mail" />
-                    <button class="button footer-form__button" type="submit">
-                      Zapisz się
-                      <svg class="icon footer-form__icon--rotate" width="24" height="24">
-                        <use href="images/icons.svg#icon-send"></use>
-                      </svg>
-                    </button>
-                  </form>
+              </li>
+              <li class="portfolio-item">
+                <div class="portfolio-box">
+                  <img src="images/portfolio/portfolio-02.jpg" alt="Picture of website with some people" width="370" height="294" />
+                  <div class="portfolio-overlay">
+                    <p>Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na niezabezpieczone
+                      serwery konkurencji</p>
+                  </div>
                 </div>
-              </div>
-            </footer>
+                <div class="portfolio-text-container">
+                  <h3 class="portfolio-title">Grafika New Orlean vs Golden Star</h3>
+                  <p class="portfolio-description">Dizajn</p>
+                </div>
+              </li>
+              <li class="portfolio-item">
+                <div class="portfolio-box">
+                  <img src="images/portfolio/portfolio-03.jpg" alt="Picture of website with some people" width="370" height="294" />
+                  <div class="portfolio-overlay">
+                    <p>Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na niezabezpieczone
+                      serwery konkurencji</p>
+                  </div>
+                </div>
+                <div class="portfolio-text-container">
+                  <h3 class="portfolio-title">Grafika New Orlean vs Golden Star</h3>
+                  <p class="portfolio-description">Aplikacja</p>
+                </div>
+              </li>
+              <li class="portfolio-item">
+                <div class="portfolio-box">
+                  <img src="images/portfolio/portfolio-04.jpg" alt="Picture of website with some people" width="370" height="294" />
+                  <div class="portfolio-overlay">
+                    <p>Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na niezabezpieczone
+                      serwery konkurencji</p>
+                  </div>
+                </div>
+                <div class="portfolio-text-container">
+                  <h3 class="portfolio-title">Projekt Prime</h3>
+                  <p class="portfolio-description">Marketing</p>
+                </div>
+              </li>
+              <li class="portfolio-item">
+                <div class="portfolio-box">
+                  <img src="images/portfolio/portfolio-05.jpg" alt="Picture of website with some people" width="370" height="294" />
+                  <div class="portfolio-overlay">
+                    <p>Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na niezabezpieczone
+                      serwery konkurencji</p>
+                  </div>
+                </div>
+                <div class="portfolio-text-container">
+                  <h3 class="portfolio-title">Projekt Boxes</h3>
+                  <p class="portfolio-description">Aplikacja</p>
+                </div>
+              </li>
+              <li class="portfolio-item">
+                <div class="portfolio-box">
+                  <img src="images/portfolio/portfolio-06.jpg" alt="Picture of website with some people" width="370" height="294" />
+                  <div class="portfolio-overlay">
+                    <p>Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na niezabezpieczone
+                      serwery konkurencji</p>
+                  </div>
+                </div>
+                <div class="portfolio-text-container">
+                  <h3 class="portfolio-title">Inspiration has no Borders</h3>
+                  <p class="portfolio-description">Strona internetowa</p>
+                </div>
+              </li>
+              <li class="portfolio-item">
+                <div class="portfolio-box">
+                  <img src="images/portfolio/portfolio-07.jpg" alt="Picture of website with some people" width="370" height="294" />
+                  <div class="portfolio-overlay">
+                    <p>Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na niezabezpieczone
+                      serwery konkurencji</p>
+                  </div>
+                </div>
+                <div class="portfolio-text-container">
+                  <h3 class="portfolio-title">Magazyn Limited Edition</h3>
+                  <p class="portfolio-description">Dizajn</p>
+                </div>
+              </li>
+              <li class="portfolio-item">
+                <div class="portfolio-box">
+                  <img src="images/portfolio/portfolio-08.jpg" alt="Picture of website with some people" width="370" height="294" />
+                  <div class="portfolio-overlay">
+                    <p>Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na niezabezpieczone
+                      serwery konkurencji</p>
+                  </div>
+                </div>
+                <div class="portfolio-text-container">
+                  <h3 class="portfolio-title">Projekt LAB</h3>
+                  <p class="portfolio-description">Marketing</p>
+                </div>
+              </li>
+              <li class="portfolio-item">
+                <div class="portfolio-box">
+                  <img src="images/portfolio/portfolio-09.jpg" alt="Picture of website with some people" width="370" height="294" />
+                  <div class="portfolio-overlay">
+                    <p>Technocrack jest popularną platformą wykorzystywaną do
+                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                      platformę do celów szpiegowskich i ataków na niezabezpieczone
+                      serwery konkurencji</p>
+                  </div>
+                </div>
+                <div class="portfolio-text-container">
+                  <h3 class="portfolio-title">Growing Business</h3>
+                  <p class="portfolio-description">Aplikacja</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+
+  <!-- ========== FOOTER ========== -->
+
+      <footer class="foot">
+        <div class="container footer-container">
+          <div class="footer-contacts">
+            <a class="logo-placeholder logo-down style-link" href="#"><span class="logo-span">Web</span>Studio</a>
+            <address class="adres">
+              <ul class="adres-list">
+                <li>
+                  <a class="where-to style-link" href="https://goo.gl/maps/Lxoy2PiTruj3LMqQA" target="_blank" rel="noopener nofollow noreferrer">
+                    m. Warszawa, Aleje Jerozolimskie 21
+                  </a>
+                </li>
+                <li><a class="info-link transparent footer-link style-link" href="mailto:info@example.com">info@example.com</a></li>
+                <li><a class="info-link transparent footer-link style-link" href="tel:+48111111111">+48 111 111 111</a></li>
+              </ul>
+            </address>
           </div>
-        </body>
-      </html>
+          <div class="footer-social-div">
+            <h3 class="footer-social-h3">dołącz do nas</h3>
+            <ul class="footer-social-list">
+              <li class="footer-social-icon">
+                <svg class="icon" width="20" height="20">
+                  <use href="images/icons.svg#icon-instagram"></use>
+                </svg>
+              </li>
+              <li class="footer-social-icon">
+                <svg class="icon" width="20" height="20">
+                  <use href="images/icons.svg#icon-twitter"></use>
+                </svg>
+              </li>
+              <li class="footer-social-icon">
+                <svg class="icon" width="20" height="20">
+                  <use href="images/icons.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li class="footer-social-icon">
+                <svg class="icon" width="20" height="20">
+                  <use href="images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h3 class="footer-social-h3">zapisz się do newslettera</h3>
+            <form class="footer-form">
+              <input class="input-newsletter-footer" type="email" name="input-newsletter-footer" placeholder="E-mail" />
+              <button class="btn-footer-form" type="submit">
+                Zapisz się
+                <svg class="icon-send" width="24" height="24">
+                  <use href="images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
